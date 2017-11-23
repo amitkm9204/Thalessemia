@@ -8,7 +8,7 @@ public class AdminDatabase {
 
 	public static void main(String[] args) {
 		
-		///AdminDatabase obj = new AdminDatabase("amitkm","amitkm");
+		//AdminDatabase obj = new AdminDatabase("amitkm","amitkm");
 		//System.out.println(obj.loginStatus);
 	}
 	public AdminDatabase(String userName,String Password)
@@ -22,6 +22,7 @@ public class AdminDatabase {
 			if(rs.next())
 			{
 				loginStatus=true;
+				//System.out.println("status successful");
 			}
 				
 			
@@ -34,9 +35,6 @@ public class AdminDatabase {
 		{
 			e.printStackTrace();
 		}
-	}
-	public AdminDatabase() {
-		
 	}
 
 }
